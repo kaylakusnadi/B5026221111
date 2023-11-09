@@ -1,0 +1,2055 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #101A31;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    /* Medium */
+    text-transform: normal
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: #10285d;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal
+}
+
+
+a,
+.button {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none
+}
+
+a {
+    color: #635c5c
+}
+
+a:hover {
+    color: #fff
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    text-decoration: none
+}
+
+a,
+button {
+    color: #fff;
+    outline: medium none
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.capitalize {
+    text-transform: capitalize
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit
+}
+
+ul {
+    margin: 0px;
+    padding: 0px
+}
+
+li {
+    list-style: none;
+    /* menghilangkan tampilan bullet pada elemen list pada halaman website */
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0
+}
+
+.kayla-button {
+    border: none;
+    padding: 13px 30px;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 500;
+    background-size: 200%;
+    transition: 0.6s;
+    background-image: linear-gradient(to left, #c79f88, #b6876b, #c9a48f);
+}
+
+.kayla-button:hover {
+    color: #FDC886;
+    text-decoration: underline;
+}
+
+.kayla-flex {
+    display: flex;
+}
+
+.kayla-col-lg {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 866px) {
+    .kayla-col-lg {
+        -ms-flex: 0 0 11.111111%;
+        flex: 0 0 11.111111%;
+        max-width: 11.111111%
+    }
+}
+
+@media (max-width: 865px) {
+    .kayla-col-md {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+    .kayla-col-sm {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+
+/* Halaman Header */
+
+.kayla-preloader {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    /* urutan tampilan */
+    -webkit-transition: .6s;
+    /* Mengatur durasi transisi pada preloader ketika muncul atau hilang. */
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto
+}
+
+#kayla-preloader {
+    overflow: hidden;
+    /* konten yang melebihi batas ukuran elemen akan disembunyikan */
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.kayla-preloader .kayla-preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #BE9278;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.kayla-preloader .kayla-preloader-circle2 {
+    border-top-color: #0078ff
+}
+
+.kayla-preloader .kayla-preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.kayla-preloader .kayla-preloader-img img {
+    max-width: 55px
+}
+
+.kayla-preloader .kayla-pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase
+}
+
+.kayla-header-area .kayla-header-bottom {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0px 90px;
+    padding-right: 0
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .kayla-header-area .kayla-header-bottom {
+        padding: 0px 80px;
+        padding-right: 0
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-header-area .kayla-header-bottom {
+        padding: 0px 15px;
+        padding-right: 0
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-header-area .kayla-header-bottom {
+        padding: 22px 50px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-header-area .kayla-header-bottom {
+        padding: 22px 20px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-header-area .kayla-header-bottom {
+        padding: 22px 11px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-header-area {
+        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-header-area {
+        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-header-area {
+        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
+    }
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-left ul li {
+    color: #fff;
+    display: inline-block;
+    margin-right: 56px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-left ul li:last-child {
+    margin-right: 0px
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-left ul li i {
+    margin-right: 8px
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-right .kayla-header-social li {
+    display: inline-block
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-right .kayla-header-social li a {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 25px
+}
+
+.kayla-header-area .kayla-header-top .kayla-header-info-right .kayla-header-social li a:hover {
+    color: #BE9278
+}
+
+.kayla-main-header {
+    position: relative;
+    z-index: 3
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .kayla-main-header .kayla-main-menu {
+        margin-right: 30px
+    }
+}
+
+.kayla-main-header .kayla-main-menu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1
+}
+
+.kayla-main-header .kayla-main-menu ul li a {
+    color: #101A31;
+    font-weight: 600;
+    padding: 28px 25px;
+    display: block;
+    font-size: 15px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: capitalize
+}
+
+.kayla-main-header .kayla-main-menu ul li:hover>a {
+    color: #BE9278
+}
+
+.kayla-main-header .kayla-main-menu ul ul.kayla-submenu {
+    position: absolute;
+    width: 170px;
+    background: #fff;
+    left: 0;
+    top: 120%;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    padding: 17px 0;
+    border-top: 5px solid #BE9278;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.kayla-main-header .kayla-main-menu ul ul.kayla-submenu>li {
+    margin-left: 7px;
+    display: block
+}
+
+.kayla-main-header .kayla-main-menu ul ul.kayla-submenu>li>a {
+    padding: 6px 10px !important;
+    font-size: 16px;
+    color: #1D2547;
+    font-weight: 700;
+    text-transform: capitalize
+}
+
+.kayla-main-header .kayla-main-menu ul ul.kayla-submenu>li>a:hover {
+    color: #BE9278;
+    background: none
+}
+
+.kayla-main-header ul>li:hover>ul.kayla-submenu {
+    visibility: visible;
+    opacity: 1;
+    /* 0 berarti elemen tersebut sepenuhnya transparan 
+    atau tidak terlihat, sedangkan nilai 1 berarti 
+    elemen tersebut sepenuhnya jernih atau terlihat dengan jelas. */
+    top: 100%
+}
+
+.kayla-header-sticky.kayla-sticky-bar {
+    background: #fff
+}
+
+.kayla-header-sticky.kayla-sticky-bar.sticky .kayla-main-menu ul li a {
+    padding: 20px 20px !important
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-header-sticky.kayla-sticky-bar.kayla-sticky {
+        padding: 15px 0px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-header-sticky.kayla-sticky-bar.kayla-sticky {
+        padding: 15px 0px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-header-sticky.kayla-sticky-bar.kayla-sticky {
+        padding: 15px 0px
+    }
+}
+
+.kayla-ml-30 {
+    margin-left: 30px;
+}
+
+.kayla-header-btn {
+    border: none;
+    padding: 29px 66px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    color: #ffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    background-size: 200%;
+    transition: 0.6s;
+    background: #BE9278;
+    background-position: right
+}
+
+.kayla-header-btn:hover {
+    background-position: left;
+    color: #ffff !important
+}
+
+/* 
+.kayla-mobile_menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 99 
+
+    Nilai z-index digunakan untuk menentukan urutan 
+    tampilan elemen pada halaman website, dimana 
+    nilai yang lebih besar akan ditampilkan di 
+    atas nilai yang lebih kecil.
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu {
+    background: transparent;
+    margin-top: 0px !important
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_btn {
+    top: -23px
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_btn .kayla-slicknav_icon-bar {
+    background-color: #BE9278 !important
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_nav {
+    margin-top: 9px !important
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_nav a:hover {
+    background: transparent;
+    color: #BE9278
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_nav a {
+    font-size: 15px;
+    padding: 7px 10px
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_nav .kayla-slicknav_item a {
+    padding: 0 !important
+}
+
+.kayla-mobile_menu .kayla-slicknav_menu .kayla-slicknav_nav .kayla-slicknav_arrow {
+    color: #BE9278
+} */
+
+/* Halaman Pertama */
+
+.kayla-slider-area {
+    margin-top: -1px
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption {
+    overflow: hidden
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption img {
+    margin-bottom: 32px
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption span {
+    color: #010A44;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+    color: #FDC886;
+    font-size: 76px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    line-height: 1.1;
+    display: block
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+        font-size: 56px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+        font-size: 45px;
+        line-height: 1.2
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+        font-size: 30px;
+        line-height: 1.2
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+        font-size: 33px;
+        line-height: 1.2;
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption h1 {
+        font-size: 23px;
+        line-height: 1.2;
+        margin-bottom: 25px
+    }
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption p {
+    margin-bottom: 44px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 50px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption p {
+        margin-bottom: 29px;
+        font-size: 18px;
+        padding-right: 21px
+    }
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-caption.kayla-caption2 h2 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption.kayla-caption2 h2 {
+        font-size: 30px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption .kayla-caption2 h2 {
+        font-size: 33px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-area .kayla-single-slider .kayla-caption .kayla-caption2 h2 {
+        font-size: 51px
+    }
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-img {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.kayla-slider-area .kayla-single-slider .kayla-img.kayla-img2 img {
+    width: inherit;
+    height: inherit
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img.kayla-img2 img {
+        width: 626px;
+        height: 280px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img.kayla-img2 img {
+        display: block;
+        width: 542px;
+        height: 268px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img.kayla-img2 img {
+        display: block;
+        width: 359px;
+        height: 226px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img.kayla-img2 img {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        width: 628px;
+        height: 731px
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1500px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        width: 660px;
+        height: 745px
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1750px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        width: 660px;
+        height: 745px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        width: 474px;
+        height: 622px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        display: none
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-area .kayla-single-slider .kayla-img img {
+        display: none
+    }
+}
+
+.kayla-slider-active button.kayla-slick-arrow {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    background: none;
+    border: 0;
+    padding: 0;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background: #00444b
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-active button.kayla-slick-arrow {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        right: 40px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-active button.kayla-slick-arrow {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        right: 40px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-active button.kayla-slick-arrow {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        right: 40px
+    }
+}
+
+.kayla-slider-active button.kayla-slick-arrow i {
+    font-size: 20px;
+    line-height: 60px;
+    color: #ffff
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-active button.kayla-slick-arrow i {
+        line-height: 40px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-active button.kayla-slick-arrow i {
+        line-height: 40px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-active button.kayla-slick-arrow i {
+        line-height: 40px
+    }
+}
+
+.kayla-slider-active button.kayla-slick-next {
+    right: 0px;
+    background: #04dbec
+}
+
+.kayla-slider-height {
+    min-height: 850px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-slider-height {
+        min-height: 700px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-slider-height {
+        min-height: 600px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-slider-height {
+        min-height: 600px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-slider-height {
+        min-height: 600px
+    }
+}
+
+.kayla-rotateme {
+    -webkit-animation-name: rotateme;
+    animation-name: rotateme;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+@keyframes kayla-rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes kayla-rotateme {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+/* Halaman Kedua */
+
+.kayla-visit-nusabites-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px 100px
+}
+
+.kayla-visit-nusabites-area::before {
+    position: absolute;
+    content: "";
+    background: #F2E1D9;
+    width: 68%;
+    height: 100%;
+    z-index: -9;
+    right: 0;
+    top: 0
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-visit-nusabites-area::before {
+        position: unset
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area::before {
+        position: unset
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area::before {
+        position: unset
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .kayla-visit-nusabites-area {
+        margin: 0px 10px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-visit-nusabites-area {
+        margin: 0px 0px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-visit-nusabites-area {
+        margin: 0px 0px;
+        display: block
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area {
+        display: block;
+        margin: 0px 0px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area {
+        margin: 0px 0px;
+        display: block
+    }
+}
+
+.kayla-visit-nusabites-area .kayla-details {
+    width: 30%;
+    padding: 20px 20px 20px 60px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-visit-nusabites-area .kayla-details {
+        width: 53%;
+        padding: 20px 20px 20px 50px
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .kayla-visit-nusabites-area .kayla-details {
+        width: 41%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-visit-nusabites-area .kayla-details {
+        width: 100%;
+        padding: 50px 30px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area .kayla-details {
+        width: 100%;
+        padding: 50px 30px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area .kayla-details {
+        width: 100%;
+        padding: 50px 30px
+    }
+}
+
+.kayla-visit-nusabites-area .kayla-details span {
+    margin-bottom: 22px;
+    display: block;
+    color: #7d8da4
+}
+
+.kayla-visit-nusabites-area .kayla-details h2 {
+    font-size: 56px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    text-transform: inherit
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-visit-nusabites-area .kayla-details h2 {
+        font-size: 50px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area .kayla-details h2 {
+        font-size: 50px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area .kayla-details h2 {
+        font-size: 29px
+    }
+}
+
+.kayla-visit-nusabites-area .kayla-details p.kayla-top {
+    color: #010A44;
+    line-height: 1.7;
+    font-size: 18px
+}
+
+.kayla-visit-nusabites-area .kayla-details p.kayla-bottom {
+    margin-bottom: 41px;
+    font-size: 14px
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area .kayla-details p.kayla-bottom {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area .kayla-details p.kayla-bottom {
+        font-size: 13px
+    }
+}
+
+.kayla-visit-nusabites-area .kayla-offers {
+    background-image: url(../img/visit_bg.png);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 570px;
+    width: 50%;
+    margin: 130px 0
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-visit-nusabites-area .kayla-offers {
+        width: 49%
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-visit-nusabites-area .kayla-offers {
+        width: 100%;
+        height: 500px;
+        margin: 0px 0
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-visit-nusabites-area .kayla-offers {
+        width: 100%;
+        height: 500px;
+        margin: 0px 0
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-visit-nusabites-area .kayla-offers {
+        width: 100%;
+        height: 500px;
+        margin: 0px 0
+    }
+}
+
+.kayla-fix {
+    overflow: hidden
+}
+
+/* Halaman Ketiga */
+
+.kayla-categories-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-categories-area {
+        padding-top: 100px;
+        padding-bottom: 50px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-categories-area {
+        padding-top: 65px;
+        padding-bottom: 0px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-categories-area {
+        padding-top: 65px;
+        padding-bottom: px
+    }
+}
+
+.kayla-categories-area::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    bottom: 0;
+    right: 0;
+    top: 0
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .kayla-categories-area::before {
+        width: 21px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-categories-area::before {
+        position: unset
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-categories-area::before {
+        position: unset
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-categories-area::before {
+        position: unset
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-categories-area::before {
+        position: unset
+    }
+}
+
+.kayla-categories-area .kayla-single {
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    z-index: 1
+}
+
+.kayla-categories-area .kayla-single .kayla-icon img {
+    margin-bottom: 26px;
+    display: block
+}
+
+.kayla-categories-area .kayla-single .kayla-cap h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 19px;
+    display: block;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-categories-area .kayla-single .kayla-cap h5 {
+        font-size: 17px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-categories-area .kayla-single .kayla-cap h5 {
+        font-size: 25px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-categories-area .kayla-single .kayla-cap h5 {
+        font-size: 25px
+    }
+}
+
+.kayla-categories-area .kayla-single .kayla-cap p {
+    color: #101A31;
+    font-size: 14px;
+    line-height: 1.9
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-categories-area .kayla-single .kayla-cap p {
+        font-size: 15px
+    }
+}
+
+.kayla-categories-area .kayla-single .kayla-cap a {
+    color: #1c165c;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.kayla-categories-area .kayla-single:hover .kayla-cap h5 {
+    color: #000
+}
+
+.kayla-section-padding40 {
+    padding-top: 110px;
+    padding-bottom: 110px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-section-padding40 {
+        padding-top: 70px;
+        padding-bottom: 70px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-section-padding40 {
+        padding-top: 60px;
+        padding-bottom: 40px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-section-padding40 {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-section-tittle {
+        margin-bottom: 50px
+    }
+}
+
+.kayla-section-tittle p {
+    color: #101A31;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.kayla-section-tittle span {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    display: inline-block;
+    color: #101A31
+}
+
+.kayla-section-tittle h2 {
+    font-size: 53px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.4
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-section-tittle h2 {
+        font-size: 36px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-section-tittle h2 {
+        font-size: 34px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-section-tittle h2 {
+        font-size: 31px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-section-tittle h2 {
+        font-size: 23px
+    }
+}
+
+.kayla-section-tittle2 h2 {
+    font-size: 30px
+}
+
+@media (max-width: 575px) {
+    .kayla-section-tittle2 h2 {
+        font-size: 23px
+    }
+}
+
+.kayla-mb-60 {
+    margin-bottom: 60px
+}
+
+.kayla-mb-50 {
+    margin-bottom: 50px;
+}
+
+
+/* Halaman Keempat */
+
+/* .kayla-popular-area .kayla-section-tittle img {
+    margin-bottom: 30px
+}
+
+.kayla-popular-area .kayla-single-popular {
+    position: relative
+}
+
+.kayla-popular-area .kayla-single-popular img {
+    width: 100%
+}
+
+.kayla-popular-area .kayla-single-popular::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #010a44;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.kayla-popular-area .kayla-single-popular i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 45%;
+    color: #fff;
+    font-size: 30px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.kayla-popular-area .kayla-single-popular:hover i {
+    top: 48%;
+    opacity: 1;
+    visibility: visible
+}
+
+.kayla-popular-area .kayla-single-popular:hover::before {
+    visibility: visible;
+    opacity: .3
+}
+
+.kayla-pb-bottom {
+    padding-bottom: 100px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-pb-bottom {
+        padding-bottom: 110px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-pb-bottom {
+        padding-bottom: 50px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-pb-bottom {
+        padding-bottom: 50px
+    }
+}
+
+.kayla-pb-bottom2 {
+    padding-bottom: 60px
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-pb-bottom2 {
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-pb-bottom2 {
+        padding-bottom: 30px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-section-tittle {
+        margin-bottom: 50px
+    }
+}
+
+.kayla-section-tittle p {
+    color: #101A31;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.kayla-section-tittle span {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    display: inline-block;
+    color: #101A31
+}
+
+.kayla-section-tittle h2 {
+    font-size: 53px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.4
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .kayla-section-tittle h2 {
+        font-size: 36px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .kayla-section-tittle h2 {
+        font-size: 34px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .kayla-section-tittle h2 {
+        font-size: 31px
+    }
+}
+
+@media (max-width: 575px) {
+    .kayla-section-tittle h2 {
+        font-size: 23px
+    }
+}
+
+.kayla-section-tittle2 h2 {
+    font-size: 30px
+}
+
+@media (max-width: 575px) {
+    .kayla-section-tittle2 h2 {
+        font-size: 23px
+    }
+}
+
+.kayla-mb-80 {
+    margin-bottom: 80px
+}
+
+.kayla-single-slide {
+    position: relative;
+    z-index: 1;
+    overflow: hidden
+}
+
+.kayla-single-slide .kayla-snack_title a>h5 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.kayla-single-slide .kayla-snack_title {
+    position: absolute;
+    content: "";
+    bottom: -300px;
+    left: 0;
+    z-index: 3;
+    background: #BE9278;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    -webkit-transition-duration: 750ms;
+    transition-duration: 750ms;
+}
+
+.kayla-single-slide:hover .kayla-snack_title {
+    bottom: 0;
+}
+
+.kayla-single-slide .kayla-post-commnents a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.kayla-single-slide .kayla-post-commnents a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.kayla-single-slide .kayla-post-commnents a:first-child {
+    margin-right: 30px;
+}
+
+.kayla-single-slide .kayla-post-commnents a:first-child:after {
+    width: 2px;
+    height: 80%;
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -14px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.kayla-area .kayla-sec-tittle img {
+    margin-bottom: 30px
+}
+
+
+.kayla-area .kayla-single-area {
+    position: relative
+}
+
+.kayla-area .kayla-single-area img {
+    width: 100%
+}
+
+.kayla-area .kayla-single-area::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #010a44;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.kayla-area .kayla-single-area i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 45%;
+    color: #fff;
+    font-size: 30px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.kayla-area .kayla-single-area:hover i {
+    top: 48%;
+    opacity: 1;
+    visibility: visible
+}
+
+.kayla-area .kayla-single-area:hover::before {
+    visibility: visible;
+    opacity: .3
+} */
+
+
+
+/* Halaman Kelima */
+
+
+.mb-80 {
+    margin-bottom: 80px
+}
+
+/* --------------------
+:: 4.0 Popular Area CSS 
+-------------------- */
+
+.kayla-popular-single-slide {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.kayla-popular-single-slide .project_title a>h5 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.kayla-popular-single-slide .project_title {
+    position: absolute;
+    content: "";
+    bottom: -300px;
+    left: 0;
+    z-index: 3;
+    background: #BE9278;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    -webkit-transition-duration: 750ms;
+    transition-duration: 750ms;
+}
+
+.kayla-popular-single-slide:hover .project_title {
+    bottom: 0;
+}
+
+.kayla-popular-single-slide .post-date-commnents a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.kayla-popular-single-slide .post-date-commnents a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.kayla-popular-single-slide .post-date-commnents a:first-child {
+    margin-right: 30px;
+}
+
+.kayla-popular-single-slide .post-date-commnents a:first-child:after {
+    width: 2px;
+    height: 80%;
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -14px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+
+.kayla-popular-post-sliders {
+    position: relative;
+    z-index: 1;
+}
+
+.kayla-popular-post-sliders .owl-prev {
+    position: absolute;
+    width: 10%;
+    background-color: transparent;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: url(img/core-img/back.png), auto !important;
+    z-index: 9;
+}
+
+.kayla-popular-post-sliders .owl-next {
+    position: absolute;
+    width: 10%;
+    background-color: transparent;
+    height: 100%;
+    top: 0;
+    right: 0;
+    cursor: url(img/core-img/next.png), auto !important;
+}
+
+/* --------------------
+:: 5.0 Top Feature Area CSS 
+-------------------- */
+
+.kayla-categories_area {
+    padding: 80px 0 50px 0;
+}
+
+.kayla-single_catagory {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.kayla-single_catagory img {
+    border-radius: 20px;
+}
+
+.kayla-catagory-title {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    border-radius: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.kayla-single_catagory:hover .kayla-catagory-title {
+    background-color: #BE9278;
+}
+
+.kayla-catagory-title a>h5 {
+    margin-bottom: 0;
+    line-height: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.kayla-single_catagory:hover .kayla-catagory-title a>h5 {
+    color: #fff;
+}
+
+/* Halaman Contact Form */
+
+.kayla-mb-5 {
+    margin-bottom: 5px
+}
+
+.kayla-feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+
+.kayla-bg-gradient {
+    background-image: var(--bs-gradient) !important;
+}
+
+.kayla-rounded-3 {
+    border-radius: var(--bs-border-radius-lg) !important;
+}
+
+.kayla-fw-bolder {
+    font-weight: bolder !important;
+}
+
+.kayla-d-grid {
+    display: grid !important;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        transition: none;
+    }
+}
+
+.form-control[type=file] {
+    overflow: hidden;
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+    cursor: pointer;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::-webkit-date-and-time-value {
+    height: 1.5em;
+}
+
+.form-control::-moz-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.form-control::file-selector-button {
+    padding: 0.375rem 0.75rem;
+    margin: -0.375rem -0.75rem;
+    -webkit-margin-end: 0.75rem;
+    margin-inline-end: 0.75rem;
+    color: #212529;
+    background-color: #e9ecef;
+    pointer-events: none;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: 1px;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control::file-selector-button {
+        transition: none;
+    }
+}
+
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: #dde0e3;
+}
+
+.form-control-plaintext {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #212529;
+    background-color: transparent;
+    border: solid transparent;
+    border-width: 1px 0;
+}
+
+.form-control-plaintext:focus {
+    outline: 0;
+}
+
+.form-control-plaintext.form-control-sm,
+.form-control-plaintext.form-control-lg {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.form-control-sm {
+    min-height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+.form-control-sm::file-selector-button {
+    padding: 0.25rem 0.5rem;
+    margin: -0.25rem -0.5rem;
+    -webkit-margin-end: 0.5rem;
+    margin-inline-end: 0.5rem;
+}
+
+.form-control-lg {
+    min-height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.form-control-lg::file-selector-button {
+    padding: 0.5rem 1rem;
+    margin: -0.5rem -1rem;
+    -webkit-margin-end: 1rem;
+    margin-inline-end: 1rem;
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+textarea.form-control-sm {
+    min-height: calc(1.5em + 0.5rem + 2px);
+}
+
+textarea.form-control-lg {
+    min-height: calc(1.5em + 1rem + 2px);
+}
+
+.form-control-color {
+    width: 3rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem;
+}
+
+.form-control-color:not(:disabled):not([readonly]) {
+    cursor: pointer;
+}
+
+.form-control-color::-moz-color-swatch {
+    border: 0 !important;
+    border-radius: 0.375rem;
+}
+
+.form-control-color::-webkit-color-swatch {
+    border-radius: 0.375rem;
+}
+
+.form-control-color.form-control-sm {
+    height: calc(1.5em + 0.5rem + 2px);
+}
+
+.form-control-color.form-control-lg {
+    height: calc(1.5em + 1rem + 2px);
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 3;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-floating>label {
+        transition: none;
+    }
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    padding: 1rem 0.75rem;
+}
+
+.form-floating>.form-control::-moz-placeholder,
+.form-floating>.form-control-plaintext::-moz-placeholder {
+    color: transparent;
+}
+
+.form-floating>.form-control::placeholder,
+.form-floating>.form-control-plaintext::placeholder {
+    color: transparent;
+}
+
+.form-floating>.form-control:not(:-moz-placeholder-shown),
+.form-floating>.form-control-plaintext:not(:-moz-placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown),
+.form-floating>.form-control-plaintext:focus,
+.form-floating>.form-control-plaintext:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-control:-webkit-autofill,
+.form-floating>.form-control-plaintext:-webkit-autofill {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-select {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-select~label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-floating>.form-control:-webkit-autofill~label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-floating>.form-control-plaintext~label {
+    border-width: 1px 0;
+}
+
+/* Halaman Footer */

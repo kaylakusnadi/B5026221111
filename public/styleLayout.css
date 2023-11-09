@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.kayla_column {
+    height: 100vh;
+}
+
+.kayla_column_left {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
