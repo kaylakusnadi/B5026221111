@@ -150,7 +150,8 @@
                 <!-- Isi -->
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".2s">
                             <div class="kayla-icon">
                                 <img src="assets/img/Proffesional.svg" alt="">
                             </div>
@@ -162,7 +163,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".2s">
                             <div class="kayla-icon">
                                 <img src="assets/img/Basket.svg" alt="">
                             </div>
@@ -174,7 +176,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".4s">
                             <div class="kayla-icon">
                                 <img src="assets/img/Money.svg" alt="">
                             </div>
@@ -186,7 +189,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="kayla-single kayla-mb-50 wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".5s">
                             <div class="kayla-icon">
                                 <img src="assets/img/Quality.svg" alt="">
                             </div>
@@ -345,15 +349,18 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                    data-sb-validations="required" style="height: 5rem" />
+                                <input class="form-control" id="name" type="text"
+                                    placeholder="Enter your name..." data-sb-validations="required"
+                                    style="height: 5rem" />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
+                                </div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@gmail.com"
-                                    data-sb-validations="required,email" style="height: 5rem" />
+                                <input class="form-control" id="email" type="email"
+                                    placeholder="name@gmail.com" data-sb-validations="required,email"
+                                    style="height: 5rem" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
                                 </div>
@@ -361,19 +368,20 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(+62)821 1456 7890"
-                                    data-sb-validations="required" style="height: 5rem" />
+                                <input class="form-control" id="phone" type="tel"
+                                    placeholder="(+62)821 1456 7890" data-sb-validations="required"
+                                    style="height: 5rem" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
                                     required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text"
-                                    placeholder="Enter your message here..." style="height: 15rem"
-                                    data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                                    style="height: 15rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                    required.
                                 </div>
                             </div>
                             <!-- Submit success message-->
@@ -389,8 +397,8 @@
                             </div>
 
                             <!-- Submit Button-->
-                            <div class="kayla-d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
-                                    type="submit">Submit</button></div>
+                            <div class="kayla-d-grid"><button class="btn btn-primary btn-lg disabled"
+                                    id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
@@ -419,25 +427,32 @@
                         <a href="P2-1" target="_blank" class="kayla-button">2'1</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P2-2" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".4s">2'2</a>
+                        <a href="P2-2" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".4s">2'2</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P2-3" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".5s">2'3</a>
+                        <a href="P2-3" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".5s">2'3</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P3" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".6s">3'1</a>
+                        <a href="P3" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".6s">3'1</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P4" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".7s">4'1</a>
+                        <a href="P4" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".7s">4'1</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P5-1" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".8s">5'1</a>
+                        <a href="P5-1" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".8s">5'1</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P5-2" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".9s">5'2</a>
+                        <a href="P5-2" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".9s">5'2</a>
                     </div>
                     <div class="kayla-col-lg kayla-col-md kayla-col-sm">
-                        <a href="P6" target="_blank" class="kayla-button wow fadeInUp" data-wow-delay=".9s">6'1</a>
+                        <a href="P6" target="_blank" class="kayla-button wow fadeInUp"
+                            data-wow-delay=".9s">6'1</a>
                     </div>
                 </div>
             </div>
@@ -451,7 +466,8 @@
         <footer class="bg-dark">
             <div class="container px-5">
                 <div>
-                    <center><img src="assets/img/NusaBites.png" width="200px" alt="" class="m-5"></center>
+                    <center><img src="assets/img/NusaBites.png" width="200px" alt="" class="m-5">
+                    </center>
                 </div>
                 <p class="m-0 text-center text-white">Nusabites is your complete culinary portal. We provide an online
                     platform that makes it easy for customers to find and buy traditional

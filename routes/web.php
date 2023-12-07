@@ -65,15 +65,15 @@ Route::get('P6', function () {
 	return view('P6_Validation');
 });
 
-Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
-Route::get('biodata', 'App\Http\Controllers\DosenController@biodata');
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index') -> name('perkalian');
+Route::get('biodata', 'App\Http\Controllers\DosenController@biodata') -> name('biodata');
 
 Route::get('showjam/{jam}', 'App\Http\Controllers\DosenController@showjam');
 
-Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
+Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir') -> name('formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
 
-Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
+Route::get('/pegawai','App\Http\Controllers\PegawaiController@index') -> name('pegawai');
 
 Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
 Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
@@ -86,8 +86,25 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 
-Route::get('/keranjangbelanja','App\Http\Controllers\BelanjaController@index');
+Route::get('/keranjangbelanja','App\Http\Controllers\BelanjaController@index') -> name('keranjangbelanja');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\BelanjaController@store');
-
 Route::get('/keranjangbelanja/tambah','App\Http\Controllers\BelanjaController@tambah');
 Route::get('/keranjangbelanja/hapus/{ID}','App\Http\Controllers\BelanjaController@hapus');
+
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index') -> name('nilaikuliah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
+
+// Route::get('/nilaikuliah/hapus/{ID}','App\Http\Controllers\NilaiKuliahController@hapus');
+
+
+Route::get('/kopi','App\Http\Controllers\KopiController@index') -> name('kopi');
+
+Route::post('/kopi/store','App\Http\Controllers\KopiController@store');
+Route::get('/kopi/edit/{id}','App\Http\Controllers\KopiController@edit');
+Route::post('/kopi/update','App\Http\Controllers\KopiController@update');
+
+Route::get('/kopi/tambah','App\Http\Controllers\KopiController@tambah');
+Route::get('/kopi/hapus/{id}','App\Http\Controllers\KopiController@hapus');
+
+Route::get('/kopi/cari','App\Http\Controllers\KopiController@cari');

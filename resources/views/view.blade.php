@@ -4,51 +4,59 @@
 
 @section('konten')
 
+<style>
+    .box {
+        border: 4px solid #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        width: 220px;
+        height: 275px;
+    }
+</style>
+
     <h3>Data Pegawai</h3>
     <br>
 
-    @foreach ($pegawai as $p)
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="http://localhost/B5026221111/public/pegawai.jpg" class="img-fluid" alt="Foto Profil">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <ul class="list-group">
-
-                        {{-- <li class="list-group-item">
-                            <span class="font-weight-bold">Nama :</span> {{ $p->pegawai_nama }}
-                        </li>
-                        <li class="list-group-item">
-                            <span class="font-weight-bold">Jabatan :</span> {{ $p->pegawai_jabatan }}
-                        </li>
-                        <li class="list-group-item">
-                            <span class="font-weight-bold">Umur :</span> {{ $p->pegawai_umur }}
-                        </li>
-                        <li class="list-group-item">
-                            <span class="font-weight-bold">Alamat :</span> {{ $p->pegawai_alamat }}
-                        </li>
- --}}
-
-                        <li class="list-group-item">
-                            <h5>Nama :</h5> {{ $p->pegawai_nama }}
-                        </li>
-                        <li class="list-group-item">
-                            <h5>Jabatan :</h5> {{ $p->pegawai_jabatan }}
-                        </li>
-                        <li class="list-group-item">
-                            <h5>Umur :</h5> {{ $p->pegawai_umur }}
-                        </li>
-                        <li class="list-group-item">
-                            <h5>Alamat :</h5> {{ $p->pegawai_alamat }}
-                        </li>
-                    </ul>
-                </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="box mx-auto">
             </div>
+        </div>
+
+        <div class="col-md-8">
+            @foreach ($pegawai as $p)
+                <form action="/pegawai/update" method="post" class="form-horizontal">
+                    {{ csrf_field() }}
+
+                    <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br />
+
+                    <div class="form-group row">
+                        <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Nama</h6></label>
+                        <label class="col-sm-1 col-form-label"><h6>:</h6></label>
+                        <label class="col-form-label" name="nama">{{ $p->pegawai_nama }}</label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Jabatan</h6></label>
+                        <label class="col-sm-1 col-form-label"><h6>:</h6></label>
+                        <label class="col-form-label" name="jabatan">{{ $p->pegawai_jabatan }}</label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Umur</h6></label>
+                        <label class="col-sm-1 col-form-label"><h6>:</h6></label>
+                        <label class="col-form-label" name="umur">{{ $p->pegawai_umur }}</label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Alamat</h6></label>
+                        <label class="col-sm-1 col-form-label"><h6>:</h6></label>
+                        <label class="col-form-label" name="alamat">{{ $p->pegawai_alamat }}</label>
+                    </div>
+
+                    <br>
+                </div>
+            </form>
         </div>
 
         <br>
@@ -57,7 +65,6 @@
         <br>
         <br>
 
-        </form>
     @endforeach
 
 @endsection

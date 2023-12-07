@@ -11,28 +11,32 @@
 		{{ csrf_field() }}
 
 		<div class="form-group row">
-            <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Nama :</h6></label>
+            <label for="nama" class="col-sm-1 col-form-label mr-2"><h6>Nama</h6></label>
+            <label class="col-form-label"><h6>:</h6></label>
             <div class="col-sm-6">
             	<input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama pegawai">
             </div>
         </div>
 
 		<div class="form-group row">
-            <label for="jabatan" class="col-sm-1 col-form-label mr-2"><h6>Jabatan :</h6></label>
+            <label for="jabatan" class="col-sm-1 col-form-label mr-2"><h6>Jabatan</h6></label>
+            <label class="col-form-label"><h6>:</h6></label>
             <div class="col-sm-6">
             	<input type="text" class="form-control" id="jabatan" name="jabatan" placeholder="Masukkan jabatan pegawai">
             </div>
         </div>
 
 		<div class="form-group row">
-            <label for="umur" class="col-sm-1 col-form-label mr-2"><h6>Umur :</h6></label>
+            <label for="umur" class="col-sm-1 col-form-label mr-2"><h6>Umur</h6></label>
+            <label class="col-form-label"><h6>:</h6></label>
             <div class="col-sm-6">
             	<input type="text" class="form-control" id="umur" name="umur" placeholder="Masukkan umur pegawai">
             </div>
         </div>
 
 		<div class="form-group row">
-            <label for="alamat" class="col-sm-1 col-form-label mr-2"><h6>Alamat :</h6></label>
+            <label for="alamat" class="col-sm-1 col-form-label mr-2"><h6>Alamat</h6></label>
+            <label class="col-form-label"><h6>:</h6></label>
             <div class="col-sm-6">
             	<input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan alamat pegawai">
             </div>
