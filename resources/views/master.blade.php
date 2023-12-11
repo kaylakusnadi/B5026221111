@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a style="margin-right: 330px;" class="navbar-brand" href="#">5026221111 - Kayla Kirani Kusnadi</a>
+        <a style="margin-right: 260px;" class="navbar-brand" href="#">5026221111 - Kayla Kirani Kusnadi</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
@@ -30,6 +30,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="kopi">Kopi - Pra EAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="karyawan">Karyawan</a>
             </li>
 
             <!-- Dropdown -->

@@ -97,7 +97,6 @@ Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tam
 
 // Route::get('/nilaikuliah/hapus/{ID}','App\Http\Controllers\NilaiKuliahController@hapus');
 
-
 Route::get('/kopi','App\Http\Controllers\KopiController@index') -> name('kopi');
 
 Route::post('/kopi/store','App\Http\Controllers\KopiController@store');
@@ -108,3 +107,15 @@ Route::get('/kopi/tambah','App\Http\Controllers\KopiController@tambah');
 Route::get('/kopi/hapus/{id}','App\Http\Controllers\KopiController@hapus');
 
 Route::get('/kopi/cari','App\Http\Controllers\KopiController@cari');
+
+// EAS
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index') -> name('karyawan');
+
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/tambah','App\Http\Controllers\KaryawanController@tambah');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
+Route::post('/karyawan/update','App\Http\Controllers\KaryawanController@update');
+
+Route::get('/karyawan/cari','App\Http\Controllers\KaryawanController@cari');
+
+Route::get('/karyawan/pesan', 'App\Http\Controllers\KaryawanController@pesan');
